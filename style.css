@@ -1,0 +1,131 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif; /* Font family */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    background-color: #fff; /* Background color */
+    color: #333; /* Text color */
+    text-align: center; /* Center text */
+}
+
+/* Header styles */
+header {
+    background-color: #b1c290; /* Header background */
+    border: 2px solid #276930; /* Header border */
+    font-size: 20px; /* Header font size */
+    padding: 30px; /* Header padding */
+}
+
+/* Navigation styles */
+nav ul { 
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Reset padding */
+}
+
+nav ul li {
+    display: inline; /* Inline list items */
+    margin: 0 15px; /* Space between items */
+}
+
+nav ul li a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s, color 0.3s; /* Hover transition */
+}
+
+nav ul li a:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+    color: #a09d9d; /* Hover color */
+}
+
+/* Heading styles */
+h1 {
+    color: #000; /* Main heading color */
+}
+
+h2 {
+    color: #333; /* Subheading color */
+    border: 2px solid beige; /* Border for h2 */
+    background-color: beige; /* Background for h2 */
+}
+
+/* Paragraph and additional heading styles */
+p {
+    text-align: left; /* Left-align text */
+}
+
+h3, h4 {
+    text-align: left; /* Left-align headings */
+    border: 2px solid beige; /* Border for h3/h4 */
+    background-color: beige; /* Background for h3/h4 */
+}
+
+/* Main content */
+main {
+    padding: 20px; /* Padding for main content */
+    color: #333; /* Text color */
+}
+
+/* Footer styles */
+footer {
+    font-family: Georgia, serif; /* Footer font */
+    color: black; /* Footer text color */
+    padding: 30px; /* Footer padding */
+    border: 2px solid gray; /* Footer border */
+    background-color: #bda5a5; /* Footer background */
+}
+
+footer p {
+    text-align: center; /* Center footer text */
+}
+
+/* Form styles */
+form {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Vertical stacking */
+    max-width: 400px; /* Max width */
+    margin: auto; /* Center form */
+}
+
+form label {
+    margin: 10px 0 5px; /* Margin around labels */
+}
+
+form input, form textarea {
+    padding: 10px; /* Padding inside fields */
+    margin-bottom: 10px; /* Space below fields */
+    border: 1px solid #ccc; /* Border for fields */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Button styles */
+button {
+    background: #3a3939; /* Button background */
+    color: #a09d9d; /* Button text color */
+    padding: 10px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+}
+
+button:hover {
+    background: #555; /* Hover background */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack navigation items */
+        margin: 10px 0; /* Space between items */
+    }
+}
+
+/* Fade-in animation */
+h1 {
+    animation: fadeIn 2s ease-in; /* Fade-in effect */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; } /* Start transparent */
+    to { opacity: 1; } /* Fully visible */
+}
